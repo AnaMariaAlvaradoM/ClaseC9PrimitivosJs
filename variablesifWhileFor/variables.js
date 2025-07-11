@@ -1,5 +1,8 @@
 // ! Variables 
-
+// Las variables se declaran con:
+// - var: Alcance de función (antiguo)
+// - let: Alcance de bloque (puede cambiar)
+// - const: Alcance de bloque (constante, no puede cambiar)
 let numero = 19;
 let num; 
 num = 20;
@@ -36,6 +39,13 @@ console.log(null == undefined); // false (diferentes tipos)
 console.log(" " == 0); // false (string vs número)
 console.log(5 == 5); // true (mismo valor y mismo tipo)
 
+suma = 4 + "Hola";
+
+suma = 4 + 4;
+
+resta = 4 - "2";
+
+console.log(resta);
 
 
 

@@ -10,17 +10,20 @@ if (count < 3 ){
     console.log("Es mayor que 3");
 }
 
-let countt;
-countt = Number(prompt("Escriba un número: "));
+let number
+number = prompt("Type a number: ")
 
-if (isNaN(countt)) {
-    console.log("No es un número");
-} else if (countt < 3) {
-    console.log("Menor que 3");
-    countt = countt + 1;
-} else {
-    console.log("Mayor o igual a 3");
+function oddOrEven(input) {
+  if (input % 2 == 0) {
+    return "Even!"
+  } else if (input % 2 == 1) {
+    return "Odd!"
+  } else {
+    return "Not an Integer!"
+  }
 }
+
+console.log(number + " is " + oddOrEven(number))
 
 
 //& if anidado
